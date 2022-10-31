@@ -2,8 +2,8 @@ import "./App.css";
 import { useState } from "react";
 
 function App() {
-  let [month, updateMonth] = useState("1");
-  let [year, updateYear] = useState("1980");
+  // let [month, updateMonth] = useState("1");
+  // let [year, updateYear] = useState("1980");
   async function handleClick() {
     await fetch("/.netlify/functions/getco2", {
       method: "POST",
