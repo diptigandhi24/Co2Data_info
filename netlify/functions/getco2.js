@@ -718,7 +718,15 @@ const co2_Data = new Map([
 
 exports.handler = async (event) => {
   const co2query = await JSON.parse(event.body);
-  const resData = co2_Data.get(Number(co2query.year))[1];
+  const resData = {};
+  resData["bornYearData"] = co2_Data.get(Number(co2query.year))[1];
+  const latestYear = [...co2_Data.keys()].pop();
+  const latestYearData = co2_Data.get(latestYear);
+  const latestMonthData =
+    latestYearData[
+      Object.keys(latestYearData)[Object.keys(latestYearData).length - 1]
+    ];
+  resData["currentData"] = latestMonthData;
   try {
     return {
       statusCode: 200,
