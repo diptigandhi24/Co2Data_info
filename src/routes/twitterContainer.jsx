@@ -21,7 +21,7 @@ const TwitterContainer = ({ bornYear, currentYear }) => {
     script.setAttribute("src", "https://platform.twitter.com/widgets.js");
     script.setAttribute("charset", "utf-8");
     document.getElementsByClassName("twitter-embed")[0].appendChild(script);
-  }, []);
+  });
 
   return (
     <>
