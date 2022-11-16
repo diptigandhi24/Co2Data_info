@@ -29,6 +29,7 @@ function App() {
   }
   return (
     <div>
+      <h3>Climate Change is Real</h3>
       <p>
         Each year, human activities release more carbon dioxide into the
         atmosphere than natural processes can remove.
@@ -44,7 +45,8 @@ function App() {
         disastrous, unpredictable effects. We are already at 1.3 degrees C
       </p>
       <h4>
-        Please Enter your birth-year and select birth Month to get the co2 data
+        Please enter your birth year and select birth month to compare co2 data
+        of your born-year with the current co2 in the atmosphere.
       </h4>
       <div className="info">
         <div className="info-form">
