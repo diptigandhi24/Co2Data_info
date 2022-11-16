@@ -24,7 +24,7 @@ function App() {
       .then((res) => res.json())
       .then((data) => {
         console.log("data", data);
-        navigate("/results", { state: { data: data } });
+        navigate(`/results/${data.data.bornYearData}/${data.data.currentData}`);
       });
   }
   return (

@@ -15,7 +15,7 @@ const TwitterContainer = ({ bornYear, currentYear }) => {
         <div className="twitter-embed">
           <a
             href="https://twitter.com/share?ref_src=twsrc%5Etfw"
-            class="twitter-share-button"
+            className="twitter-share-button"
             data-size="large"
             data-text={`Average co2 data at your born year was ${bornYear}ppm, now it is ${currentYear}ppm`}
             data-hashtags="ClimateChange ,ClimateChangeIsReal"

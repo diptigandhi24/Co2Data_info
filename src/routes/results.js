@@ -1,18 +1,19 @@
-import { useLocation } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
 import TwitterContainer from "./twitterContainer";
 export default function Results() {
-  const location = useLocation();
-  console.log("params recieved are", location.state);
+  // const location = useLocation();
+  const params = useParams();
+
+  console.log("params recieved are", params);
   return (
     <div>
       <p>
-        Average co2 data at your born year was{" "}
-        {location.state.data.data.bornYearData}ppm, now it is{" "}
-        {location.state.data.data.currentData}ppm
+        Average co2 data at your born year was {params.bornYear}ppm, now it is{" "}
+        {params.currentYear}ppm
       </p>
       <TwitterContainer
-        bornYear={location.state.data.data.bornYearData}
-        currentYear={location.state.data.data.currentData}
+        bornYear={params.bornYear}
+        currentYear={params.currentYear}
       />
     </div>
   );

@@ -13,7 +13,7 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
-    path: "results",
+    path: "results/:bornYear/:currentYear",
     element: <Results />,
   },
 ]);
