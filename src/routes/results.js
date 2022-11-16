@@ -1,7 +1,6 @@
-import { useLocation, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import TwitterContainer from "./twitterContainer";
 export default function Results() {
-  // const location = useLocation();
   const params = useParams();
 
   console.log("params recieved are", params);
