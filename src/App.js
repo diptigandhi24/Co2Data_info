@@ -17,7 +17,7 @@ function App() {
     await fetch("/.netlify/functions/getco2", {
       method: "POST",
       body: JSON.stringify({
-        year: year | 1980,
+        year: year,
         month: `${month}` | 1,
       }),
     })
