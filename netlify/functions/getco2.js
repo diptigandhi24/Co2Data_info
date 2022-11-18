@@ -720,7 +720,24 @@ exports.handler = async (event) => {
   const co2query = await JSON.parse(event.body);
   const resData = {};
   console.log("co2query", co2query, co2query.year, co2query.month);
-  resData["bornYearData"] = co2_Data.get(Number(co2query.year))[co2query.month];
+  console.log(
+    "is it undefeind",
+    co2_Data.get(Number(co2query.year))[co2query.month]
+  );
+  if (co2_Data.get(Number(co2query.year))[co2query.month] !== undefined) {
+    resData["bornYearData"] = co2_Data.get(Number(co2query.year))[
+      co2query.month
+    ];
+  } else {
+    let latestMonthofBornYear = co2_Data.get(Number(co2query.year));
+    resData["bornYearData"] =
+      latestMonthofBornYear[
+        Object.keys(latestMonthofBornYear)[
+          Object.keys(latestMonthofBornYear).length - 1
+        ]
+      ];
+  }
+
   const latestYear = [...co2_Data.keys()].pop();
   const latestYearData = co2_Data.get(latestYear);
   const latestMonthData =

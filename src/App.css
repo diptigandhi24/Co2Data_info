@@ -72,10 +72,21 @@
 /* .info-textbox {
   text-align: center;
 } */
-.info-textbox div {
+.info-textbox .focus-input {
   display: block;
   padding: 0.5rem;
   padding-left: 0;
+}
+/* .focus-input input[type="text"] {
+  border: 1px solid yellow;
+} */
+.focus-input input[type="text"]:focus-visible {
+  outline: 2px solid cadetblue;
+  border: none;
+}
+.year-error {
+  color: red;
+  font-size: 0.8rem;
 }
 .month-btn button {
   margin-right: 0.8rem;

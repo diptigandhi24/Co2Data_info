@@ -30,11 +30,9 @@ export default function MonthButton({ handleUpdateMonth }) {
         temp[currentSelectID] = "btn-default-color";
         temp[e.target.id] = "btn-active-color";
         handleUpdateMonth(Number(e.target.id) + 1);
-        console.log("Selected month is", e.target.id);
       } else {
         temp[e.target.id] = "btn-active-color";
         handleUpdateMonth(Number(e.target.id) + 1);
-        console.log("Selected month is", e.target.id);
       }
       return [...temp];
     });
