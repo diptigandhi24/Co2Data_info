@@ -14,6 +14,12 @@ export default function Results() {
         bornYear={params.bornYear}
         currentYear={params.currentYear}
       />
+      <p>
+        The source of this information is Global Monitoring Laboratory,{" "}
+        <a href="https://gml.noaa.gov/ccgg/trends/gl_data.html">
+          visit for more information
+        </a>
+      </p>
     </div>
   );
 }
