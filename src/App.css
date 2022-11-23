@@ -16,7 +16,7 @@
   margin-right: 10%;
 }
 .App > div {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgb(255, 255, 255);
   padding: 20px;
 }
 .App-logo {
