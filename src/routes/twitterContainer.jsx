@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 
-const TwitterContainer = ({ bornYear, currentYear }) => {
+const TwitterContainer = ({ co2 }) => {
   useEffect(() => {
     const script = document.createElement("script");
     script.async = true;
@@ -17,7 +17,7 @@ const TwitterContainer = ({ bornYear, currentYear }) => {
             href="https://twitter.com/share?ref_src=twsrc%5Etfw"
             className="twitter-share-button"
             data-size="large"
-            data-text={`Average co2 data at your born year was ${bornYear}ppm, now it is ${currentYear}ppm`}
+            data-text={`There is ${co2} rise in the atmospheric co2 since the time of your born year.`}
             data-hashtags="ClimateChange ,ClimateChangeIsReal"
             data-show-count="false"
           >
