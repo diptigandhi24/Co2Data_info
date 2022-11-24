@@ -5,7 +5,16 @@ import App from "./App";
 import "./App.css";
 import Results from "./routes/results";
 import reportWebVitals from "./reportWebVitals";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider, Link } from "react-router-dom";
+
+function ErrorPage() {
+  return (
+    <div>
+      <p>The page you are looking for doesn't exits</p>
+      <Link to="/">back to Home</Link>
+    </div>
+  );
+}
 
 const router = createBrowserRouter([
   {
@@ -15,6 +24,10 @@ const router = createBrowserRouter([
   {
     path: "results/:bornYear/:currentYear",
     element: <Results />,
+  },
+  {
+    path: "*",
+    element: <ErrorPage />,
   },
 ]);
 const root = ReactDOM.createRoot(document.getElementById("root"));
