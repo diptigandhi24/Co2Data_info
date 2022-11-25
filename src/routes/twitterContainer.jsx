@@ -17,7 +17,7 @@ const TwitterContainer = ({ co2 }) => {
             href="https://twitter.com/share?ref_src=twsrc%5Etfw"
             className="twitter-share-button"
             data-size="large"
-            data-text={`There is ${co2} rise in the atmospheric co2 since the time of your born year.`}
+            data-text={`There is ${co2}% more CO2 in the air today than when I was born.`}
             data-hashtags="ClimateChange ,ClimateChangeIsReal"
             data-show-count="false"
           >

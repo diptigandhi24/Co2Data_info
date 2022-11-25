@@ -12,7 +12,7 @@ export default function Results() {
     <div>
       <p>
         There is {parseInt(co2)}% rise in the atmospheric co2 since the time of
-        your born year.
+        your born year
       </p>
       <TwitterContainer co2={parseInt(co2)} />
       <p>

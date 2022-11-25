@@ -66,8 +66,8 @@ function App() {
         disastrous, unpredictable effects. We are already at 1.3 degrees C
       </p>
       <h4>
-        Please enter your birth year and select birth month to compare co2 data
-        of your born-year with the current co2 in the atmosphere.
+        To see how much more CO2 is in the air now from the year you were born
+        enter the year and month you were born
       </h4>
       <div className="info">
         <div className="info-form">
