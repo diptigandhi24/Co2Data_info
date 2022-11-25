@@ -76,6 +76,7 @@
   display: block;
   padding: 0.5rem;
   padding-left: 0;
+  padding-bottom: 1.5rem;
 }
 /* .focus-input input[type="text"] {
   border: 1px solid yellow;
